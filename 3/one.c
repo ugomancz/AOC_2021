@@ -63,7 +63,7 @@ int main() {
         line[strcspn(line, "\n\r")] = 0;
         parse_line(counters, line);
     }
-    // print_counters(counters);
+    print_counters(counters);
     int gamma_rate = get_gamma_rate(counters);
     int epsilon_rate = get_epsilon_rate(counters);
     printf("gamma_rate: %d\nepsilon_rate: %d\nresult: %d", gamma_rate, epsilon_rate, gamma_rate * epsilon_rate);
